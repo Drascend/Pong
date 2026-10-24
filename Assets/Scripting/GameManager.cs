@@ -81,6 +81,17 @@ public class GameManager : MonoBehaviour
 
     private void ActivateScene()
     {
+        if (player1Score >= maxScore)
+        {
+            PlayerPrefs.SetInt("Winner", 1);
+        }
+        else if (player2Score >= maxScore)
+        {
+            PlayerPrefs.SetInt("Winner", 2);
+        }
+        PlayerPrefs.SetInt("IsAIEnabled", isAIEnabled ? 1 : 0);
+        PlayerPrefs.Save();
+
         load.allowSceneActivation = true;
         load = null;
     }

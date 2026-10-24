@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Goal : MonoBehaviour
@@ -14,11 +13,11 @@ public class Goal : MonoBehaviour
 
             if (isPlayer1Goal)
             {
-                manager.Player2Scored();
+                manager.Player1Scored();
             }
             else
             {
-                manager.Player1Scored();
+                manager.Player2Scored();
             }
         }
     }
