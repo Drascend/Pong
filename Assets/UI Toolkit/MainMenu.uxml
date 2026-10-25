@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi:schemaLocation="UnityEngine.UIElements ../../UIElements.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ui:VisualElement name="Container" style="flex-grow: 1; justify-content: center; align-items: center; background-color: rgb(0, 0, 0);">
+        <ui:Label text="Pong" style="font-size: 100px; -unity-font-style: bold; color: white; margin-bottom: 80px;" />
+        <ui:Button name="TwoPlayersButton" text="Two players" style="width: 400px; height: 80px; margin-bottom: 20px; font-size: 30px;" />
+        <ui:Button name="SinglePlayerButton" text="Singleplayer" style="width: 400px; height: 80px; font-size: 30px;" />
+    </ui:VisualElement>
+</ui:UXML>
